@@ -1,0 +1,57 @@
+<mvc:View controllerName="com.training.project1.controller.product"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <VBox>
+        <HBox id="_IDGenHBox" alignItems="Center">
+        <Label id="_IDGenLabel" text="Product ID"  width="100px" required="true" />
+      	<Input
+			id="productInput"
+			placeholder="Enter product"
+			showSuggestion="true"
+			suggestionItems="{/productSet}"
+            showValueHelp="true" valueHelpRequest="onValueHelp"
+            change="onChange">
+            <!-- suggest="onSuggest" -->
+			<suggestionItems>
+				<core:Item id="_IDGenItem" text="{Productid}" />
+			</suggestionItems>
+		</Input>
+    </HBox>
+    </VBox>
+   <HBox id="_IDGenHBox2" alignItems="Center">
+                <Label id="_IDGenLabel2" text="Category"  width="100px"/>
+                <Input
+                    id="productInput2" editable="{editInputModel>/isEditable}" value="{readModel>/Category}" >
+                </Input>
+            </HBox>
+            <HBox id="_IDGenHBox3" alignItems="Center">
+                <Label id="_IDGenLabel3" text="Suppliername"  width="100px"/>
+                <Input id="productInput3" editable="{editInputModel>/isEditable}" value="{readModel>/Suppliername}" >
+                </Input>
+            </HBox>
+            <HBox id="_IDGenHBox4" alignItems="Center">
+                <Label id="_IDGenLabel4" text="Price"  width="100px"/>
+                <Input
+                    id="productInput4" editable="{editInputModel>/isEditable}" value="{readModel>/Price}">
+                </Input>
+            </HBox>
+            <HBox id="_IDGenHBox5" alignItems="Center">
+                <Label id="_IDGenLabel5" text="Created date"  width="100px"/>
+                <DatePicker
+                    id="productInput5" editable="{editInputModel>/isEditable}" value="{readModel>/Createdat}">       
+                </DatePicker>
+            </HBox>
+</content>
+<footer>
+     <Bar >
+     <contentMiddle>
+      <Button id="idEdit" text="Edit" icon="sap-icon://edit" type="Reject" press="onEdit"/>
+       <Button text="Save" press="onSave" type="Emphasized" icon="sap-icon://save"/>
+      </contentMiddle>
+       </Bar>
+     </footer>
+    </Page>
+</mvc:View>
