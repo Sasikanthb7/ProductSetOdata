@@ -2,7 +2,7 @@
 	<SelectDialog
 		id="selectDialog"
 		title="Products"
-		items="{/productSet}"
+		items="{/zuiproductSet}"
 		search=".onValueHelpSearch"
 		confirm=".onValueHelpClose"
 		cancel=".onValueHelpClose">

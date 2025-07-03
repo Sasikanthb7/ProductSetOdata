@@ -11,7 +11,7 @@
 			id="productInput"
 			placeholder="Enter product"
 			showSuggestion="true"
-			suggestionItems="{/productSet}"
+			suggestionItems="{/zuiproductSet}"
             showValueHelp="true" valueHelpRequest="onValueHelp"
             change="onChange">
             <!-- suggest="onSuggest" -->

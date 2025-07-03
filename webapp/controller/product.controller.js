@@ -9,7 +9,7 @@ sap.ui.define([
     return Controller.extend("com.training.project1.controller.product", {
         onInit() {
             //local model for edit
-            var lModel = {isEditable:false};
+            // var lModel = {isEditable:false};
           let editModel = new JSONModel({
                     isEditable:false
           })
@@ -19,7 +19,7 @@ sap.ui.define([
         let Selected = this.getView().byId("productInput").getValue();
         //get model
         let oModel = this.getOwnerComponent().getModel();
-        let sPath = "/productSet('"+Selected+"')";
+        let sPath = "/zuiproductSet('"+Selected+"')";
         oModel.read(sPath,{
             success:function(oData,Response){
                 let Jmodel=new sap.ui.model.json.JSONModel(oData);
@@ -44,7 +44,6 @@ sap.ui.define([
 
             //payload for odata record update
             let oPayload= { 
-               Mandt:"",
                "Category":this.getView().getModel("readModel").getProperty("/Category"),
                "Suppliername":oSuppliername,
                "Price":oPrice,
