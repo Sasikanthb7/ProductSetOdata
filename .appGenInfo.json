@@ -4,7 +4,7 @@
     "generatorPlatform": "SAP Business Application Studio",
     "serviceType": "SAP System (ABAP On Premise)",
     "metadataFilename": "",
-    "serviceUrl": "http://49.206.197.10:8034/sap/opu/odata/sap/ZUI5CRUDQ_SRV",
+    "serviceUrl": "http://49.206.197.10:8034/sap/opu/odata/sap/ZPRODUCTSET_SRV",
     "appName": "project1",
     "appTitle": "App Title",
     "appDescription": "An SAP Fiori application.",

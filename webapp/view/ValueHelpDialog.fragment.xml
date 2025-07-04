@@ -10,7 +10,7 @@
 			icon="{ProductPicUrl}"
 			iconDensityAware="false"
 			iconInset="false"
-			title="{Name}"
+			title="{Productid}"
 			description="{ProductId}" />
 	</SelectDialog>
 </core:FragmentDefinition>
